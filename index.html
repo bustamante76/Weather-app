@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>FrontEnd Mentor | The Weather app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/x-png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/scripts.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <section class="header">
+        <div class="logo">
+          <img src="./images/weather-logo.png" alt="Weather Logo" />
+          <span class="logo-text">Weather Now</span>
+        </div>
+        <div class="units-selector">
+          <button class="units-btn">Units</button>
+        </div>
+      </section>
+
+      <h1 class="main-title">How’s the sky looking today?</h1>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search for a place..."
+          class="search-input"
+        />
+        <button class="search-btn">Search</button>
+      </div>
+
+      <section class="container-weather">
+        <section class="weather-inf">
+          <div class="weather-card">
+            <div class="location-date">
+              <h2 class="location">Berlin, Germany</h2>
+              <p class="date">Tuesday, Aug 5, 2025</p>
+            </div>
+            <div class="weather-info-temp">
+              <span class="weather-icon">☀️</span>
+              <span class="weather-temp">20°</span>
+            </div>
+          </div>
+          <div class="weather-details">
+            <div class="detail-box">
+              <p class="date">Feels Like</p>
+              <span class="date-value">18°</span>
+            </div>
+            <div class="detail-box">
+              <p class="date">Humidity</p>
+              <span class="date-value">46%</span>
+            </div>
+            <div class="detail-box">
+              <p class="date">Wind</p>
+              <span class="date-value">14 km/h</span>
+            </div>
+            <div class="detail-box">
+              <p class="date">Precipitation</p>
+              <span class="date-value">0 mm</span>
+            </div>
+          </div>
+          <div class="daily-forecast">
+            <div class="forecast-day">
+              <p class="day">Tue</p>
+              <p class="icon-time">🌧️</p>
+              <div class="temp">
+                <span class="high-temp">20°</span>
+                <span class="low-temp">14°</span>
+              </div>
+            </div>
+            <div class="forecast-day">
+              <p class="day">Wed</p>
+              <p class="icon-time">🌧️</p>
+              <div class="temp">
+                <span class="high-temp">21°</span>
+                <span class="low-temp">15°</span>
+              </div>
+            </div>
+            <div class="forecast-day">
+              <p class="day">Thu</p>
+              <p class="icon-time">☀️</p>
+              <div class="temp">
+                <span class="high-temp">24°</span>
+                <span class="low-temp">14°</span>
+              </div>
+            </div>
+            <div class="forecast-day">
+              <p class="day">Fri</p>
+              <p class="icon-time">⛅</p>
+              <div class="temp">
+                <span class="high-temp">25°</span>
+                <span class="low-temp">13°</span>
+              </div>
+            </div>
+            <div class="forecast-day">
+              <p class="day">Sat</p>
+              <p class="icon-time">⛈️</p>
+              <div class="temp">
+                <span class="high-temp">21°</span>
+                <span class="low-temp">15°</span>
+              </div>
+            </div>
+            <div class="forecast-day">
+              <p class="day">Sun</p>
+              <p class="icon-time">🌧️</p>
+              <div class="temp">
+                <span class="high-temp">25°</span>
+                <span class="low-temp">16°</span>
+              </div>
+            </div>
+            <div class="forecast-day">
+              <p class="day">Mon</p>
+              <p class="icon-time">🌫️</p>
+              <div class="temp">
+                <span class="high-temp">24°</span>
+                <span class="low-temp">15°</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="hourly-forecast">
+          <div class="hourly-header">
+            <span>Hourly forecast</span>
+            <select id="day-select" class="day-select" name="days" required>
+              <option value="" disabled selected>-- Select --</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Monday">Monday</option>
+            </select>
+          </div>
+
+          <div class="hourly-list">
+            <div class="hourly-item">
+              <div class="hourly-img">
+                <img class="img-forecast" src="./images/lluvia.png" />
+                <span class="forecast-hourly">3 PM</span>
+              </div>
+              <span class="forecast-temp">20°</span>
+            </div>
+            <div class="hourly-item">
+              <div class="hourly-img">
+                <img class="img-forecast" src="./images/lluvia.png" />
+                <span class="forecast-hourly">4 PM</span>
+              </div>
+              <span class="forecast-temp">20°</span>
+            </div>
+            <div class="hourly-item">
+              <div class="hourly-img">
+                <img class="img-forecast" src="./images/lluvia.png" />
+                <span class="forecast-hourly">5 PM</span>
+              </div>
+              <span class="forecast-temp">20°</span>
+            </div>
+            <div class="hourly-item">
+              <div class="hourly-img">
+                <img class="img-forecast" src="./images/lluvia.png" />
+                <span class="forecast-hourly">6 PM</span>
+              </div>
+              <span class="forecast-temp">19°</span>
+            </div>
+            <div class="hourly-item">
+              <div class="hourly-img">
+                <img class="img-forecast" src="./images/lluvia.png" />
+                <span class="forecast-hourly">7 PM</span>
+              </div>
+              <span class="forecast-temp">18°</span>
+            </div>
+            <div class="hourly-item">
+              <div class="hourly-img">
+                <img class="img-forecast" src="./images/lluvia.png" />
+                <span class="forecast-hourly">8 PM</span>
+              </div>
+              <span class="forecast-temp">18°</span>
+            </div>
+            <div class="hourly-item">
+              <div class="hourly-img">
+                <img class="img-forecast" src="./images/lluvia.png" />
+                <span class="forecast-hourly">9 PM</span>
+              </div>
+              <span class="forecast-temp">17°</span>
+            </div>
+            <div class="hourly-item">
+              <div class="hourly-img">
+                <img class="img-forecast" src="./images/lluvia.png" />
+                <span class="forecast-hourly">10 PM</span>
+              </div>
+              <span class="forecast-temp">17°</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
