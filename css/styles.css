@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/*
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 300, 500, 600, 600i, 700
+
+- Family: [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque)
+- Weights: 700
+*/
+
+:root {
+  --radius-card: 20px;
+  --radius-box: 8px;
+  --Color-Neutral-900: hsl(243, 96%, 9%); /** Background body **/
+  --Color-Neutral-800: hsl(243, 27%, 20%); /** Background select **/
+  --Color-Neutral-700: hsl(243, 23%, 24%);
+  --Color-Neutral-600: hsl(243, 23%, 30%);
+  --Color-Neutral-300: hsl(240, 6%, 70%);
+  --Color-Neutral-200: hsl(250, 6%, 84%);
+  --Color-Neutral-0: hsl(0, 0%, 100%); /** text, ciudad / temp **/
+  --Color-Orange-500: hsl(28, 100%, 52%);
+  --Color-Blue-500: hsl(233, 67%, 56%);
+  --Color-Blue-700: hsl(248, 70%, 36%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--Color-Neutral-0);
+  background-color: var(--Color-Neutral-900);
+}
+
+main {
+  padding: 30px;
+  width: max-content;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.header__img {
+  width: 220px;
+  height: auto;
+}
+
+.units-selector {
+  font-size: 1.2rem;
+  color: var(--Color-Neutral-200);
+  background-color: var(--Color-Neutral-800);
+  padding: 14px 14px;
+  border: none;
+  border-radius: var(--radius-box);
+  cursor: pointer;
+}
+
+.units-select {
+  background-color: var(--Color-Neutral-800);
+  color: var(--Color-Neutral-200);
+  border: none;
+  font-size: 1.2rem;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin: 50px 0;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--Color-Neutral-200);
+  background-color: var(--Color-Neutral-800);
+  padding: 14px 20px 14px 60px;
+  border: none;
+  border-radius: var(--radius-box);
+}
+
+.icon-search {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 48px;
+}
+
+.search-btn {
+  font-size: 1.2rem;
+  color: var(--Color-Neutral-0);
+  background-color: var(--Color-Blue-500);
+  padding: 14px 30px;
+  border: none;
+  border-radius: var(--radius-box);
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+}
