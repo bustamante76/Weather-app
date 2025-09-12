@@ -27,6 +27,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -46,7 +47,6 @@ main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  border: 1px solid red;
 }
 
 .header {
@@ -124,9 +124,10 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-/*        CONTAINER WEATHER  /  WEATHER INF      */
+/*        SECTION  - WEATHER INF      */
 .weather-inf {
   display: flex;
   flex-direction: column;
@@ -183,7 +184,6 @@ main {
   background-size: contain;
 }
 
-
 /* WEATHER DETAILS */
 .weather-details {
   display: flex;
@@ -202,6 +202,7 @@ main {
   background-color: var(--Color-Neutral-800);
   border-radius: var(--radius-box);
   padding: 15px 20px;
+  border: 1px solid var(--Color-Neutral-600);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -235,6 +236,7 @@ main {
   background-color: var(--Color-Neutral-800);
   padding: 15px 12px;
   border-radius: var(--radius-box);
+  border: 1px solid var(--Color-Neutral-600);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,3 +252,52 @@ main {
   justify-content: space-between;
 }
 
+/*  SECTION  -  HOURLY FORECAST */
+.hourly-forecast {
+  width: 370px;
+  min-width: 350px;
+  font-size: 1.4rem;
+  background-color: var(--Color-Neutral-800);
+  padding: 20px;
+  border-radius: var(--radius-card);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hourly-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day-select {
+  font-size: 1rem;
+  color: var(--Color-Neutral-200);
+  background-color: var(--Color-Neutral-600);
+  padding: 10px 14px;
+  border: none;
+  border-radius: var(--radius-box);
+  cursor: pointer;
+}
+
+.hourly-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hourly-item {
+  width: 100%;
+  height: 60px;
+  color: var(--Color-Neutral-200);
+  background-color: var(--Color-Neutral-700);
+  padding: 0 20px;
+  border: 1px solid var(--Color-Neutral-600);
+  border-radius: var(--radius-box);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
