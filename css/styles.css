@@ -135,8 +135,8 @@ main {
 
 /* WEATHER CARD */
 .weather-card {
-  width: 740px;
-  aspect-ratio: 2.8 / 1;
+  width: 800px;
+  aspect-ratio: 2.8 / 1.24;
   background-image: url("../assets/images/bg-today-large.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -230,8 +230,8 @@ main {
 }
 
 .forecast-day {
-  width: 93px;
-  height: 140px;
+  width: 100px;
+  height: 150px;
   color: var(--Color-Neutral-200);
   background-color: var(--Color-Neutral-800);
   padding: 15px 12px;
